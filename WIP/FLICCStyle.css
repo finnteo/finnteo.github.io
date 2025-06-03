@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container a {
+    margin-right: 100px;
+    margin-top: 100px;
+}
+
+.container img {
+    width: 30vw;
+    float: none; /* Remove float */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+a{
+    vertical-align: top;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+img {
+    max-width: 80%;
+    cursor: pointer;
+    border-radius:4%;
+}
+
+
