@@ -1,0 +1,337 @@
+/*all my colours for quick find and replace
+background = #FF4E33
+text = #0c131b
+highlight = #fff
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-family: "Gabarito", sans-serif;
+  background-color: #ff4e33;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-family: "Gabarito", sans-serif;
+  font-size: 7vw;
+  text-align: left;
+}
+
+.container {
+  display: flex;
+  background-color: #ff4e33;
+  color: #fff;
+  text-align: center;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #ff4e33;
+  color: #0c131b;
+  text-align: left;
+  padding: 20px;
+  /* add border 
+    border: 1px solid #0C131B; /* Add a stroke (border) with color */
+  border-radius: 20px; /* Add curved corners */
+  margin-right: 10px; /* Add right margin (gutter) */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 5px;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+/* change text styles just for sidebar headers */
+.sidebar a {
+  text-decoration: none;
+  font-size: 18pt;
+  color: #0c131b;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Style the active/current link*/
+.sidebar a.active {
+  font-weight: bolder;
+  color: #fff;
+}
+
+.right-side-content {
+  flex: 2;
+  padding: 20px;
+  background-color: #ff4e33;
+  color: #0c131b;
+  text-align: left;
+  padding: 20px;
+  /* border: 1px solid #0C131B; /* Add a stroke (border) with color */
+  /* border-radius: 20px; /* Add curved corners */
+  overflow-y: auto;
+}
+
+header {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+main {
+  margin: 5px auto;
+  padding: 0;
+  background-color: #ff4e33;
+  /* border: 1px solid #ddd;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+}
+
+.projects {
+  flex-wrap: wrap;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Create a 3-column grid */
+  gap: 5px; /* Add spacing between grid items */
+}
+
+.project { 
+  margin: 10px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.project img { /* Style the project image */
+  max-width: 100%;
+  height: auto;
+}
+/* effects for get bigger on hover*/
+.hover-zoom {
+  transition: transform 0.3s;
+
+}
+
+.hover-zoom:hover {
+  transform: scale(0.98); /* reduces the size by 5% on hover */
+}
+
+.Project_headers { /* Style the project headers */
+  font-size: 20;
+  text-align: left;
+  margin: 2px;
+}
+
+.project p {/* Style the project descriptions */
+  font-family: 'IBM Plex Sans';
+  color: #fff;
+  font-size: 12pt;
+  font-style: normal;
+  text-align: left;
+  margin: 2px;
+}
+
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  /* add border
+    border: 1px solid #0C131B; /* Add a stroke (border) with color */
+  padding-top: 20px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: #0c131b;
+  text-align: center;
+  padding-right: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25pt;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Change the background colour on mouse-over */
+.header a:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  font-weight: bolder;
+  color: #fff;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+  transition: 0.3s;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+/*Landing page text*/
+.landing-page-text {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ff4e33;
+}
+
+.landing-page {
+  text-align: center;
+}
+
+.centered-text {
+  /*background-color: #fff;*/
+  padding: 60px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.centered-text h1 {
+  font-size: 56px;
+}
+
+.centered-text p {
+  font-size: 18px;
+  color: #0c131b;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.cta-button {
+  text-decoration: none;
+  min-width: 130px;
+  height: auto;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  /*background: #fff;*/
+  overflow: hidden;
+  border: 2px solid #0c131b;
+  color: #0c131b;
+}
+.cta-button:hover {
+  color: #fff;
+}
+.cta-button:hover:after {
+  width: 100%;
+}
+.cta-button:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #0c131b;
+}
+
+.contact_container {
+  width: 600px;
+  background-color: #ff4e33;
+  color: #0c131b;
+  text-align: center;
+  padding: 20px;
+}
+
+.contact_right_container {
+  width: 400px;
+  background-color: #ff4e33;
+  color: #0c131b;
+  text-align: left;
+  padding: 20px;
+}
+
+.contact_container img {
+  max-width: 90%;
+  height: auto;
+}
+
+.contact_right_container h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Gabarito", sans-serif;
+  font-size: 20pt;
+  text-align: left;
+}
+
+.contact_right_container h2 a{
+ text-decoration: none;
+ color: #0c131b;
+ transition: 0.3s;
+}
+
+.contact_right_container a:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.bottom-footer {
+    position: fixed;
+    font-size: 1vw;
+    bottom: 0;
+    color: #0c131b;
+    padding-left: 22px;
+}
+
+
+/*PROJECT PAGES*/
+div.project-imgs-scroll {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.project-imgs-scroll img {
+  padding: 5px;
+  max-height: 35vw;
+  vertical-align: middle;
+}
