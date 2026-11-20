@@ -1,3 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-family: "IBM Plex Sans", serif;
+  background-color: #FF4E33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -11,13 +23,6 @@
 .container img {
     width: 30vw;
     float: none; /* Remove float */
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 a{
