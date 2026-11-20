@@ -2,22 +2,21 @@
 background = #fff
 text = #0c131b
 highlight = #FF4E33
-font-family = "Gabarito", sans-serif
-font-family: "jaf-lapture", serif;
+font-family: "jaf-lapture-display", serif;
 */
 
 body {
   margin: 0;
   padding: 0;
   text-align: left;
-  font-family: "jaf-lapture", serif;
+  font-family: "jaf-lapture-display", serif;
   background-color: #fff;
 }
 
 h1 {
   margin: 0;
   padding: 0;
-  font-family: "jaf-lapture", serif;
+  font-family: "jaf-lapture-display", serif;
   font-size: 7vw;
   text-align: left;
 }
