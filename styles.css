@@ -1,6 +1,9 @@
 /*all my colours for quick find and replace
 background = #fff
+background = #fff
 text = #0c131b
+highlight = #FF4E33
+font-family: "jaf-lapture-display", serif;
 highlight = #FF4E33
 font-family: "jaf-lapture-display", serif;
 */
@@ -11,11 +14,14 @@ body {
   text-align: left;
   font-family: "jaf-lapture-display", serif;
   background-color: #fff;
+  font-family: "jaf-lapture-display", serif;
+  background-color: #fff;
 }
 
 h1 {
   margin: 0;
   padding: 0;
+  font-family: "jaf-lapture-display", serif;
   font-family: "jaf-lapture-display", serif;
   font-size: 7vw;
   text-align: left;
@@ -25,6 +31,8 @@ h1 {
   margin-left: 20vw; /* Leave space for the sidebar */
   /* margin-top: 10vw; */
   display: flex;
+  background-color: #fff;
+  color: #FF4E33;
   background-color: #fff;
   color: #FF4E33;
   text-align: center;
@@ -41,7 +49,10 @@ h1 {
   text-align: left;
   padding: 10px;
   z-index: 1000;
+  padding: 10px;
+  z-index: 1000;
   /* add border 
+  border: 1px solid #0C131B; /* Add a stroke (border) with color */
   border: 1px solid #0C131B; /* Add a stroke (border) with color */
   border-radius: 20px; /* Add curved corners */
   margin-right: 10px; /* Add right margin (gutter) */
@@ -69,6 +80,7 @@ h1 {
   opacity: 1;
   text-decoration: none;
   color: #FF4E33;
+  color: #FF4E33;
   font-weight: bold;
 }
 
@@ -76,10 +88,13 @@ h1 {
 .sidebar a.active {
   font-weight: bolder;
   color: #FF4E33;
+  color: #FF4E33;
 }
 
 .right-side-content {
   flex: 2;
+  padding: 10px;
+  background-color: #fff;
   padding: 10px;
   background-color: #fff;
   color: #0c131b;
@@ -104,6 +119,7 @@ main {
   margin: 5px auto;
   padding: 0;
   background-color: #fff;
+  background-color: #fff;
   /* border: 1px solid #ddd;
     /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
 }
@@ -111,14 +127,18 @@ main {
 .projects {
   flex-wrap: wrap;
   justify-self: right;
+  justify-self: right;
   justify-content: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Create a 3-column grid */
   gap: 0px; /* Add spacing between grid items */
 
+  gap: 0px; /* Add spacing between grid items */
+
 }
 
 .project { 
+  margin: 0px;
   margin: 0px;
   text-align: center;
   display: inline-block;
@@ -127,6 +147,12 @@ main {
 }
 
 .project img { /* Style the project image */
+  width: 100%;
+  height: 80%;
+  object-fit: cover; /* Ensures the image covers the entire area */
+  padding: 0px;
+  margin: 0px;
+  border: none;
   width: 100%;
   height: 80%;
   object-fit: cover; /* Ensures the image covers the entire area */
@@ -142,6 +168,7 @@ main {
 
 .hover-zoom:hover {
   transform: scale(1.02); /* increases the size by 5% on hover */
+  transform: scale(1.02); /* increases the size by 5% on hover */
 }
 
 .Project_headers { /* Style the project headers */
@@ -153,10 +180,12 @@ main {
 .project p {/* Style the project descriptions */
   font-family: 'IBM Plex Sans';
   color: #FF4E33;
+  color: #FF4E33;
   font-size: 12pt;
   font-style: normal;
   text-align: left;
   margin: 2px;
+  margin-bottom: 8px
   margin-bottom: 8px
 }
 
@@ -200,6 +229,7 @@ main {
 .header a.active {
   font-weight: bolder;
   color: #FF4E33;
+  color: #FF4E33;
 }
 
 /* Float the link section to the right */
@@ -229,6 +259,7 @@ main {
   align-items: center;
   min-height: 100vh;
   background-color: #fff;
+  background-color: #fff;
 }
 
 .landing-page {
@@ -257,6 +288,7 @@ body.landing-page-text > header {
 
 .centered-text {
   /*background-color: #FF4E33;*/
+  /*background-color: #FF4E33;*/
   padding: 60px;
   border-radius: 10px;
   text-decoration: none;
@@ -278,6 +310,7 @@ body.landing-page-text > header {
   min-width: 130px;
   height: auto;
   color: #FF4E33;
+  color: #FF4E33;
   padding: 5px;
   text-align: center;
   font-size: 25px;
@@ -290,11 +323,13 @@ body.landing-page-text > header {
   border-radius: 5px;
   z-index: 0;
   /*background: #FF4E33;*/
+  /*background: #FF4E33;*/
   overflow: hidden;
   border: 2px solid #0c131b;
   color: #0c131b;
 }
 .cta-button:hover {
+  color: #FF4E33;
   color: #FF4E33;
 }
 .cta-button:hover:after {
@@ -315,6 +350,7 @@ body.landing-page-text > header {
 .contact_container {
   width: 600px;
   background-color: #fff;
+  background-color: #fff;
   color: #0c131b;
   text-align: center;
   padding: 20px;
@@ -322,6 +358,7 @@ body.landing-page-text > header {
 
 .contact_right_container {
   width: 400px;
+  background-color: #fff;
   background-color: #fff;
   color: #0c131b;
   text-align: left;
@@ -372,12 +409,18 @@ div.project-imgs-scroll {
   padding: 0px;
   margin: 0px;
   border: none;
+  padding: 0px;
+  margin: 0px;
+  border: none;
 }
 
 div.project-imgs-scroll img {
   padding: 5px;
   max-height: 35vw;
   vertical-align: middle;
+  padding: 0px;
+  margin: 0px;
+  border: none;
   padding: 0px;
   margin: 0px;
   border: none;
