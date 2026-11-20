@@ -216,6 +216,18 @@ main {
   text-align: center;
 }
 
+.landing-footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 16px 22px;
+  color: #0c131b;
+  font-size: clamp(12px, 1vw, 16px);
+}
+
 .centered-text {
   /*background-color: #fff;*/
   padding: 60px;
